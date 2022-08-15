@@ -2,3 +2,10 @@
 .gitignore
 build
 node_modules
+front/node_modules
+front/.git
+front/.gitignore
+front/build
+back/venv
+back/.git
+back/.gitignore
