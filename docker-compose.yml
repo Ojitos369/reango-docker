@@ -2,15 +2,21 @@ version: "3.7"
 
 services:
   back:
-    build:
-      context: ./back
+    image: 
+      stabp
+    # build: 
+    #   context: ./back
+    #   dockerfile: Dockerfile
     command: gunicorn static_apps.wsgi --bind 0.0.0.0:8000
     # ports:
     #   - "8000:8000"
   
   front:
-    build:
-      context: ./front
+    image:
+      stafp
+    # build:
+    #   context: ./front
+    #   dockerfile: Dockerfile
     volumes:
       - react_build:/usr/src/build
   
