@@ -40,11 +40,11 @@ RUN npm i -g pnpm
 RUN wget -O lsd.deb 'https://github.com/lsd-rs/lsd/releases/download/0.23.1/lsd_0.23.1_amd64.deb'
 RUN dpkg -i lsd.deb
 
-
 RUN echo "alias ll='lsd -lh --group-dirs=first'" >> ~/.zshrc
 RUN echo "alias l='lsd -a --group-dirs=first'" >> ~/.zshrc
 RUN echo "alias lla='lsd -lha --group-dirs=first'" >> ~/.zshrc
 RUN echo "alias ls='lsd --group-dirs=first'" >> ~/.zshrc
+RUN echo "alias cdh='cd /usr/src/'" >> ~/.zshrc
 
 RUN echo "alias gat='git add .'" >> ~/.zshrc
 RUN echo "alias gcm='git commit -m'" >> ~/.zshrc
